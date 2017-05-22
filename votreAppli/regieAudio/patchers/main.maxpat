@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 495.0, 79.0, 852.0, 857.0 ],
+		"rect" : [ 422.0, 79.0, 1188.0, 636.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,11 +38,59 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-8",
+					"maxclass" : "ezdac~",
+					"numinlets" : 2,
+					"numoutlets" : 0,
+					"patching_rect" : [ 381.0, 250.0, 45.0, 45.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-6",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 441.0, 83.0, 24.0, 24.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-4",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 293.0, 83.0, 24.0, 24.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-2",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 325.0, 155.0, 138.0, 22.0 ],
+					"style" : "",
+					"text" : "syntheseSonore.maxpat"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-41",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 993.083252, 178.0, 150.0, 20.0 ],
+					"patching_rect" : [ 910.083252, 136.0, 150.0, 20.0 ],
 					"style" : "",
 					"text" : "égaliseur 5 bandes"
 				}
@@ -82,7 +130,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 5,
 					"outlettype" : [ "signal", "signal", "signal", "", "dictionary" ],
-					"patching_rect" : [ 1003.0, 212.0, 150.0, 30.0 ],
+					"patching_rect" : [ 920.0, 170.0, 150.0, 30.0 ],
 					"style" : ""
 				}
 
@@ -93,7 +141,7 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1011.0, 402.5, 45.0, 45.0 ],
+					"patching_rect" : [ 928.0, 360.5, 45.0, 45.0 ],
 					"style" : ""
 				}
 
@@ -105,7 +153,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 1021.0, 347.5, 71.0, 22.0 ],
+					"patching_rect" : [ 938.0, 305.5, 71.0, 22.0 ],
 					"style" : "",
 					"text" : "effetAudio2",
 					"varname" : "egaliseur_5b"
@@ -121,7 +169,7 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 993.083252, 197.0, 179.416672, 273.0 ],
+					"patching_rect" : [ 910.083252, 155.0, 179.416672, 273.0 ],
 					"proportion" : 0.39,
 					"style" : ""
 				}
@@ -133,7 +181,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 199.083328, 180.0, 150.0, 20.0 ],
+					"patching_rect" : [ 703.083313, 142.0, 150.0, 20.0 ],
 					"style" : "",
 					"text" : "Effet pedaleWahWah"
 				}
@@ -173,7 +221,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 5,
 					"outlettype" : [ "signal", "signal", "signal", "", "dictionary" ],
-					"patching_rect" : [ 209.0, 214.0, 150.0, 30.0 ],
+					"patching_rect" : [ 713.0, 176.0, 150.0, 30.0 ],
 					"style" : ""
 				}
 
@@ -184,20 +232,20 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 217.0, 404.5, 45.0, 45.0 ],
+					"patching_rect" : [ 721.0, 366.5, 45.0, 45.0 ],
 					"style" : ""
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-9",
+					"id" : "obj-1",
 					"maxclass" : "toggle",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 303.0, 310.5, 24.0, 24.0 ],
+					"patching_rect" : [ 807.0, 272.5, 24.0, 24.0 ],
 					"style" : ""
 				}
 
@@ -209,7 +257,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 227.0, 349.5, 71.0, 22.0 ],
+					"patching_rect" : [ 731.0, 311.5, 71.0, 22.0 ],
 					"style" : "",
 					"text" : "effetAudio1"
 				}
@@ -224,7 +272,7 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 199.083328, 197.0, 179.416672, 273.0 ],
+					"patching_rect" : [ 703.083313, 159.0, 179.416672, 273.0 ],
 					"proportion" : 0.39,
 					"style" : ""
 				}
@@ -232,6 +280,44 @@
 			}
  ],
 		"lines" : [ 			{
+				"patchline" : 				{
+					"destination" : [ "obj-7", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-8", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"order" : 0,
+					"source" : [ "obj-2", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-8", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"order" : 1,
+					"source" : [ "obj-2", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-2", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-4", 0 ]
+				}
+
+			}
+, 			{
 				"patchline" : 				{
 					"destination" : [ "obj-50", 0 ],
 					"disabled" : 0,
@@ -271,6 +357,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-2", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-6", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-10", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -289,16 +384,13 @@
 				}
 
 			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-7", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-9", 0 ]
-				}
-
-			}
  ],
+		"parameters" : 		{
+			"obj-2::obj-37" : [ "live.gain~[1]", "live.gain~", 0 ],
+			"obj-2::obj-38" : [ "live.gain~[2]", "live.gain~", 0 ],
+			"obj-2::obj-36" : [ "live.gain~", "live.gain~", 0 ]
+		}
+,
 		"dependency_cache" : [ 			{
 				"name" : "effetAudio1.maxpat",
 				"bootpath" : "~/Documents/projetS2/votreAppli/regieAudio/patchers",
@@ -313,6 +405,36 @@
 			}
 , 			{
 				"name" : "effetAudio2.maxpat",
+				"bootpath" : "~/Documents/projetS2/votreAppli/regieAudio/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "syntheseSonore.maxpat",
+				"bootpath" : "~/Documents/projetS2/votreAppli/regieAudio/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ADSR.maxpat",
+				"bootpath" : "~/Documents/projetS2/votreAppli/regieAudio/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "syntheseSoustractive.maxpat",
+				"bootpath" : "~/Documents/projetS2/votreAppli/regieAudio/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "osc.maxpat",
+				"bootpath" : "~/Documents/projetS2/votreAppli/regieAudio/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "filtrage.maxpat",
 				"bootpath" : "~/Documents/projetS2/votreAppli/regieAudio/patchers",
 				"type" : "JSON",
 				"implicit" : 1

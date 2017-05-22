@@ -556,7 +556,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 69.14286, 135.0, 79.0, 26.0 ],
 					"style" : "",
-					"text" : "loadmess 57"
+					"text" : "loadmess #1"
 				}
 
 			}
@@ -957,8 +957,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-					"fontsize" : [ 12.059008 ]
+					"fontsize" : [ 12.059008 ],
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
