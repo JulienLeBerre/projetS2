@@ -208,7 +208,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 227.0, 349.5, 71.0, 22.0 ],
 					"style" : "",
 					"text" : "effetAudio1"
@@ -224,7 +224,7 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 199.083328, 199.0, 179.416672, 273.0 ],
+					"patching_rect" : [ 199.083328, 197.0, 179.416672, 273.0 ],
 					"proportion" : 0.39,
 					"style" : ""
 				}
@@ -300,6 +300,12 @@
 			}
  ],
 		"dependency_cache" : [ 			{
+				"name" : "effetAudio1.maxpat",
+				"bootpath" : "~/Documents/projetS2/demo-TS/regieAudio/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "social.aif",
 				"bootpath" : "C74:/packages/max-mxj/examples",
 				"type" : "AIFF",
