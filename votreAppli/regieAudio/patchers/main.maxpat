@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 422.0, 79.0, 1188.0, 636.0 ],
+		"rect" : [ 423.0, 79.0, 1208.0, 521.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,14 +38,50 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-3",
+					"id" : "obj-11",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 151.0, 481.0, 122.0, 22.0 ],
+					"patching_rect" : [ 82.0, 109.0, 122.0, 22.0 ],
 					"style" : "",
 					"text" : "MixageAudio.maxpat"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-9",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 122.0, 377.0, 150.0, 20.0 ],
+					"style" : "",
+					"text" : "son mono / sortie de A1\n"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-5",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 71.0, 377.0, 24.0, 24.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-3",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 0,
+					"patching_rect" : [ 71.0, 458.0, 152.0, 22.0 ],
+					"style" : "",
+					"text" : "moduleEnvoiAudio.maxpat"
 				}
 
 			}
@@ -350,6 +386,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-3", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-5", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-46", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -399,10 +444,10 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-3::obj-4" : [ "live.gain~[3]", "live.gain~[2]", 0 ],
+			"obj-11::obj-4" : [ "live.gain~[3]", "live.gain~[2]", 0 ],
 			"obj-2::obj-36" : [ "live.gain~", "live.gain~", 0 ],
 			"obj-2::obj-38" : [ "live.gain~[2]", "live.gain~", 0 ],
-			"obj-3::obj-2" : [ "live.gain~[4]", "live.gain~[1]", 0 ],
+			"obj-11::obj-2" : [ "live.gain~[4]", "live.gain~[1]", 0 ],
 			"obj-2::obj-37" : [ "live.gain~[1]", "live.gain~", 0 ]
 		}
 ,
@@ -450,6 +495,12 @@
 			}
 , 			{
 				"name" : "filtrage.maxpat",
+				"bootpath" : "~/Documents/projetS2/votreAppli/regieAudio/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "moduleEnvoiAudio.maxpat",
 				"bootpath" : "~/Documents/projetS2/votreAppli/regieAudio/patchers",
 				"type" : "JSON",
 				"implicit" : 1
