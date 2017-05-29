@@ -38,6 +38,19 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-3",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "signal", "signal" ],
+					"patching_rect" : [ 151.0, 481.0, 122.0, 22.0 ],
+					"style" : "",
+					"text" : "MixageAudio.maxpat"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-8",
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
@@ -104,21 +117,21 @@
 								"filekind" : "audiofile",
 								"loop" : 1,
 								"content_state" : 								{
-									"formant" : [ 1.0 ],
-									"pitchcorrection" : [ 0 ],
-									"play" : [ 0 ],
 									"formantcorrection" : [ 0 ],
-									"timestretch" : [ 0 ],
-									"mode" : [ "basic" ],
-									"slurtime" : [ 0.0 ],
-									"originallength" : [ 0.0, "ticks" ],
-									"originallengthms" : [ 0.0 ],
-									"quality" : [ "basic" ],
 									"basictuning" : [ 440 ],
-									"originaltempo" : [ 120.0 ],
-									"pitchshift" : [ 1.0 ],
+									"timestretch" : [ 0 ],
 									"speed" : [ 1.0 ],
-									"followglobaltempo" : [ 0 ]
+									"originaltempo" : [ 120.0 ],
+									"quality" : [ "basic" ],
+									"slurtime" : [ 0.0 ],
+									"pitchshift" : [ 1.0 ],
+									"mode" : [ "basic" ],
+									"formant" : [ 1.0 ],
+									"originallength" : [ 0.0, "ticks" ],
+									"play" : [ 0 ],
+									"followglobaltempo" : [ 0 ],
+									"pitchcorrection" : [ 0 ],
+									"originallengthms" : [ 0.0 ]
 								}
 
 							}
@@ -195,21 +208,21 @@
 								"filekind" : "audiofile",
 								"loop" : 1,
 								"content_state" : 								{
-									"formant" : [ 1.0 ],
-									"pitchcorrection" : [ 0 ],
-									"play" : [ 0 ],
 									"formantcorrection" : [ 0 ],
-									"timestretch" : [ 0 ],
-									"mode" : [ "basic" ],
-									"slurtime" : [ 0.0 ],
-									"originallength" : [ 0.0, "ticks" ],
-									"originallengthms" : [ 0.0 ],
-									"quality" : [ "basic" ],
 									"basictuning" : [ 440 ],
-									"originaltempo" : [ 120.0 ],
-									"pitchshift" : [ 1.0 ],
+									"timestretch" : [ 0 ],
 									"speed" : [ 1.0 ],
-									"followglobaltempo" : [ 0 ]
+									"originaltempo" : [ 120.0 ],
+									"quality" : [ "basic" ],
+									"slurtime" : [ 0.0 ],
+									"pitchshift" : [ 1.0 ],
+									"mode" : [ "basic" ],
+									"formant" : [ 1.0 ],
+									"originallength" : [ 0.0, "ticks" ],
+									"play" : [ 0 ],
+									"followglobaltempo" : [ 0 ],
+									"pitchcorrection" : [ 0 ],
+									"originallengthms" : [ 0.0 ]
 								}
 
 							}
@@ -386,9 +399,11 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-2::obj-37" : [ "live.gain~[1]", "live.gain~", 0 ],
+			"obj-3::obj-4" : [ "live.gain~[3]", "live.gain~[2]", 0 ],
+			"obj-2::obj-36" : [ "live.gain~", "live.gain~", 0 ],
 			"obj-2::obj-38" : [ "live.gain~[2]", "live.gain~", 0 ],
-			"obj-2::obj-36" : [ "live.gain~", "live.gain~", 0 ]
+			"obj-3::obj-2" : [ "live.gain~[4]", "live.gain~[1]", 0 ],
+			"obj-2::obj-37" : [ "live.gain~[1]", "live.gain~", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
@@ -435,6 +450,12 @@
 			}
 , 			{
 				"name" : "filtrage.maxpat",
+				"bootpath" : "~/Documents/projetS2/votreAppli/regieAudio/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "MixageAudio.maxpat",
 				"bootpath" : "~/Documents/projetS2/votreAppli/regieAudio/patchers",
 				"type" : "JSON",
 				"implicit" : 1
@@ -543,8 +564,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"fontsize" : [ 12.059008 ],
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+					"fontsize" : [ 12.059008 ]
 				}
 ,
 				"parentstyle" : "",
