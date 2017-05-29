@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 423.0, 79.0, 1208.0, 521.0 ],
+		"rect" : [ 34.0, 79.0, 1612.0, 857.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,12 +38,48 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-14",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 498.0, 130.0, 118.0, 22.0 ],
+					"style" : "",
+					"text" : "lecteurAudio.maxpat"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-13",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 300.0, 130.0, 118.0, 22.0 ],
+					"style" : "",
+					"text" : "lecteurAudio.maxpat"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-12",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 99.0, 130.0, 118.0, 22.0 ],
+					"style" : "",
+					"text" : "lecteurAudio.maxpat"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-11",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 82.0, 109.0, 122.0, 22.0 ],
+					"patching_rect" : [ 300.0, 791.0, 122.0, 22.0 ],
 					"style" : "",
 					"text" : "MixageAudio.maxpat"
 				}
@@ -55,7 +91,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 122.0, 377.0, 150.0, 20.0 ],
+					"patching_rect" : [ 344.0, 615.0, 150.0, 20.0 ],
 					"style" : "",
 					"text" : "son mono / sortie de A1\n"
 				}
@@ -68,7 +104,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 71.0, 377.0, 24.0, 24.0 ],
+					"patching_rect" : [ 293.0, 615.0, 24.0, 24.0 ],
 					"style" : ""
 				}
 
@@ -79,7 +115,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 71.0, 458.0, 152.0, 22.0 ],
+					"patching_rect" : [ 293.0, 696.0, 152.0, 22.0 ],
 					"style" : "",
 					"text" : "moduleEnvoiAudio.maxpat"
 				}
@@ -91,7 +127,7 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 381.0, 250.0, 45.0, 45.0 ],
+					"patching_rect" : [ 936.0, 225.0, 45.0, 45.0 ],
 					"style" : ""
 				}
 
@@ -103,7 +139,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 441.0, 83.0, 24.0, 24.0 ],
+					"patching_rect" : [ 996.0, 58.0, 24.0, 24.0 ],
 					"style" : ""
 				}
 
@@ -115,7 +151,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 293.0, 83.0, 24.0, 24.0 ],
+					"patching_rect" : [ 848.0, 58.0, 24.0, 24.0 ],
 					"style" : ""
 				}
 
@@ -127,7 +163,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 325.0, 155.0, 138.0, 22.0 ],
+					"patching_rect" : [ 880.0, 130.0, 138.0, 22.0 ],
 					"style" : "",
 					"text" : "syntheseSonore.maxpat"
 				}
@@ -139,7 +175,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 910.083252, 136.0, 150.0, 20.0 ],
+					"patching_rect" : [ 467.291656, 280.0, 150.0, 20.0 ],
 					"style" : "",
 					"text" : "égaliseur 5 bandes"
 				}
@@ -153,21 +189,21 @@
 								"filekind" : "audiofile",
 								"loop" : 1,
 								"content_state" : 								{
-									"formantcorrection" : [ 0 ],
 									"basictuning" : [ 440 ],
-									"timestretch" : [ 0 ],
-									"speed" : [ 1.0 ],
-									"originaltempo" : [ 120.0 ],
 									"quality" : [ "basic" ],
+									"mode" : [ "basic" ],
+									"timestretch" : [ 0 ],
+									"originaltempo" : [ 120.0 ],
+									"formant" : [ 1.0 ],
 									"slurtime" : [ 0.0 ],
 									"pitchshift" : [ 1.0 ],
-									"mode" : [ "basic" ],
-									"formant" : [ 1.0 ],
-									"originallength" : [ 0.0, "ticks" ],
-									"play" : [ 0 ],
-									"followglobaltempo" : [ 0 ],
 									"pitchcorrection" : [ 0 ],
-									"originallengthms" : [ 0.0 ]
+									"originallength" : [ 0.0, "ticks" ],
+									"followglobaltempo" : [ 0 ],
+									"speed" : [ 1.0 ],
+									"play" : [ 0 ],
+									"originallengthms" : [ 0.0 ],
+									"formantcorrection" : [ 0 ]
 								}
 
 							}
@@ -179,7 +215,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 5,
 					"outlettype" : [ "signal", "signal", "signal", "", "dictionary" ],
-					"patching_rect" : [ 920.0, 170.0, 150.0, 30.0 ],
+					"patching_rect" : [ 477.208405, 314.0, 150.0, 30.0 ],
 					"style" : ""
 				}
 
@@ -190,7 +226,7 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 928.0, 360.5, 45.0, 45.0 ],
+					"patching_rect" : [ 485.208405, 504.5, 45.0, 45.0 ],
 					"style" : ""
 				}
 
@@ -202,7 +238,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 938.0, 305.5, 71.0, 22.0 ],
+					"patching_rect" : [ 495.208405, 449.5, 71.0, 22.0 ],
 					"style" : "",
 					"text" : "effetAudio2",
 					"varname" : "egaliseur_5b"
@@ -218,7 +254,7 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 910.083252, 155.0, 179.416672, 273.0 ],
+					"patching_rect" : [ 467.291656, 299.0, 179.416672, 273.0 ],
 					"proportion" : 0.39,
 					"style" : ""
 				}
@@ -230,7 +266,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 703.083313, 142.0, 150.0, 20.0 ],
+					"patching_rect" : [ 68.291664, 282.0, 150.0, 20.0 ],
 					"style" : "",
 					"text" : "Effet pedaleWahWah"
 				}
@@ -244,21 +280,21 @@
 								"filekind" : "audiofile",
 								"loop" : 1,
 								"content_state" : 								{
-									"formantcorrection" : [ 0 ],
 									"basictuning" : [ 440 ],
-									"timestretch" : [ 0 ],
-									"speed" : [ 1.0 ],
-									"originaltempo" : [ 120.0 ],
 									"quality" : [ "basic" ],
+									"mode" : [ "basic" ],
+									"timestretch" : [ 0 ],
+									"originaltempo" : [ 120.0 ],
+									"formant" : [ 1.0 ],
 									"slurtime" : [ 0.0 ],
 									"pitchshift" : [ 1.0 ],
-									"mode" : [ "basic" ],
-									"formant" : [ 1.0 ],
-									"originallength" : [ 0.0, "ticks" ],
-									"play" : [ 0 ],
-									"followglobaltempo" : [ 0 ],
 									"pitchcorrection" : [ 0 ],
-									"originallengthms" : [ 0.0 ]
+									"originallength" : [ 0.0, "ticks" ],
+									"followglobaltempo" : [ 0 ],
+									"speed" : [ 1.0 ],
+									"play" : [ 0 ],
+									"originallengthms" : [ 0.0 ],
+									"formantcorrection" : [ 0 ]
 								}
 
 							}
@@ -270,7 +306,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 5,
 					"outlettype" : [ "signal", "signal", "signal", "", "dictionary" ],
-					"patching_rect" : [ 713.0, 176.0, 150.0, 30.0 ],
+					"patching_rect" : [ 78.208351, 316.0, 150.0, 30.0 ],
 					"style" : ""
 				}
 
@@ -281,7 +317,7 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 721.0, 366.5, 45.0, 45.0 ],
+					"patching_rect" : [ 86.208351, 506.5, 45.0, 45.0 ],
 					"style" : ""
 				}
 
@@ -294,7 +330,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 807.0, 272.5, 24.0, 24.0 ],
+					"patching_rect" : [ 172.208344, 412.5, 24.0, 24.0 ],
 					"style" : ""
 				}
 
@@ -306,7 +342,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 731.0, 311.5, 71.0, 22.0 ],
+					"patching_rect" : [ 96.208351, 451.5, 71.0, 22.0 ],
 					"style" : "",
 					"text" : "effetAudio1"
 				}
@@ -321,7 +357,7 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 703.083313, 159.0, 179.416672, 273.0 ],
+					"patching_rect" : [ 68.291664, 299.0, 179.416672, 273.0 ],
 					"proportion" : 0.39,
 					"style" : ""
 				}
@@ -444,11 +480,11 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-11::obj-4" : [ "live.gain~[3]", "live.gain~[2]", 0 ],
 			"obj-2::obj-36" : [ "live.gain~", "live.gain~", 0 ],
 			"obj-2::obj-38" : [ "live.gain~[2]", "live.gain~", 0 ],
+			"obj-2::obj-37" : [ "live.gain~[1]", "live.gain~", 0 ],
 			"obj-11::obj-2" : [ "live.gain~[4]", "live.gain~[1]", 0 ],
-			"obj-2::obj-37" : [ "live.gain~[1]", "live.gain~", 0 ]
+			"obj-11::obj-4" : [ "live.gain~[3]", "live.gain~[2]", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
@@ -507,6 +543,12 @@
 			}
 , 			{
 				"name" : "MixageAudio.maxpat",
+				"bootpath" : "~/Documents/projetS2/votreAppli/regieAudio/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "lecteurAudio.maxpat",
 				"bootpath" : "~/Documents/projetS2/votreAppli/regieAudio/patchers",
 				"type" : "JSON",
 				"implicit" : 1
