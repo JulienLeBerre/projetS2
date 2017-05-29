@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 417.0, 132.0, 1188.0, 636.0 ],
+		"rect" : [ 423.0, 79.0, 1208.0, 521.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -37,6 +37,19 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-11",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "signal", "signal" ],
+					"patching_rect" : [ 82.0, 109.0, 122.0, 22.0 ],
+					"style" : "",
+					"text" : "MixageAudio.maxpat"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-9",
 					"maxclass" : "comment",
@@ -140,21 +153,21 @@
 								"filekind" : "audiofile",
 								"loop" : 1,
 								"content_state" : 								{
+									"formantcorrection" : [ 0 ],
 									"basictuning" : [ 440 ],
-									"quality" : [ "basic" ],
-									"mode" : [ "basic" ],
 									"timestretch" : [ 0 ],
+									"speed" : [ 1.0 ],
 									"originaltempo" : [ 120.0 ],
-									"formant" : [ 1.0 ],
+									"quality" : [ "basic" ],
 									"slurtime" : [ 0.0 ],
 									"pitchshift" : [ 1.0 ],
-									"pitchcorrection" : [ 0 ],
+									"mode" : [ "basic" ],
+									"formant" : [ 1.0 ],
 									"originallength" : [ 0.0, "ticks" ],
-									"followglobaltempo" : [ 0 ],
-									"speed" : [ 1.0 ],
 									"play" : [ 0 ],
-									"originallengthms" : [ 0.0 ],
-									"formantcorrection" : [ 0 ]
+									"followglobaltempo" : [ 0 ],
+									"pitchcorrection" : [ 0 ],
+									"originallengthms" : [ 0.0 ]
 								}
 
 							}
@@ -231,21 +244,21 @@
 								"filekind" : "audiofile",
 								"loop" : 1,
 								"content_state" : 								{
+									"formantcorrection" : [ 0 ],
 									"basictuning" : [ 440 ],
-									"quality" : [ "basic" ],
-									"mode" : [ "basic" ],
 									"timestretch" : [ 0 ],
+									"speed" : [ 1.0 ],
 									"originaltempo" : [ 120.0 ],
-									"formant" : [ 1.0 ],
+									"quality" : [ "basic" ],
 									"slurtime" : [ 0.0 ],
 									"pitchshift" : [ 1.0 ],
-									"pitchcorrection" : [ 0 ],
+									"mode" : [ "basic" ],
+									"formant" : [ 1.0 ],
 									"originallength" : [ 0.0, "ticks" ],
-									"followglobaltempo" : [ 0 ],
-									"speed" : [ 1.0 ],
 									"play" : [ 0 ],
-									"originallengthms" : [ 0.0 ],
-									"formantcorrection" : [ 0 ]
+									"followglobaltempo" : [ 0 ],
+									"pitchcorrection" : [ 0 ],
+									"originallengthms" : [ 0.0 ]
 								}
 
 							}
@@ -431,8 +444,10 @@
 			}
  ],
 		"parameters" : 		{
+			"obj-11::obj-4" : [ "live.gain~[3]", "live.gain~[2]", 0 ],
 			"obj-2::obj-36" : [ "live.gain~", "live.gain~", 0 ],
 			"obj-2::obj-38" : [ "live.gain~[2]", "live.gain~", 0 ],
+			"obj-11::obj-2" : [ "live.gain~[4]", "live.gain~[1]", 0 ],
 			"obj-2::obj-37" : [ "live.gain~[1]", "live.gain~", 0 ]
 		}
 ,
@@ -444,7 +459,7 @@
 			}
 , 			{
 				"name" : "social.aif",
-				"bootpath" : "C74:/packages/max-mxj/examples",
+				"bootpath" : "~/Documents/projetS2/votreAppli/regieAudio/media",
 				"type" : "AIFF",
 				"implicit" : 1
 			}
@@ -486,6 +501,12 @@
 			}
 , 			{
 				"name" : "moduleEnvoiAudio.maxpat",
+				"bootpath" : "~/Documents/projetS2/votreAppli/regieAudio/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "MixageAudio.maxpat",
 				"bootpath" : "~/Documents/projetS2/votreAppli/regieAudio/patchers",
 				"type" : "JSON",
 				"implicit" : 1
