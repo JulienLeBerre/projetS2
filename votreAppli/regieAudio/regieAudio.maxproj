@@ -2,7 +2,7 @@
 	"name" : "regieAudio",
 	"version" : 1,
 	"creationdate" : -721919280,
-	"modificationdate" : -716672755,
+	"modificationdate" : -716075976,
 	"viewrect" : [ 11.0, 45.0, 300.0, 500.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
@@ -14,6 +14,21 @@
 				"kind" : "patcher",
 				"local" : 1,
 				"toplevel" : 1
+			}
+,
+			"effetAudio1.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"effetAudio2.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"syntheseSonore.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
 			}
 ,
 			"ADSR.maxpat" : 			{
@@ -36,17 +51,7 @@
 				"local" : 1
 			}
 ,
-			"effetAudio1.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"effetAudio2.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"syntheseSonore.maxpat" : 			{
+			"moduleEnvoiAudio.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
